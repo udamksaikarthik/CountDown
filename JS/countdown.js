@@ -2,7 +2,7 @@ var stopTime;
 const displayAnimation = document.getElementById("displayAnimation");
 function displayAnim(){
     displayAnimation.classList.toggle("active");
-} 
+}  
 
 function count(){
     stopTime = setInterval(countdown, 1000);
