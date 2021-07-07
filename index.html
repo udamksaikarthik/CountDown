@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/countdown.css"/>
+</head> 
+<body>
+    <div class="main-container">
+        <h1>CountDown Timer</h1>
+        <div class="container-1">
+            
+                <input type="text" id="date" class="date" placeholder="dd-MMM-YYYY"><br>
+                <div class="buttonsDiv">
+                <button class="button" id = "button1" onclick="displayAnim(); count();">Count</button>
+                <button class="button" onclick="stop()">Stop</button>
+            </div>
+            
+        </div>
+        <div class="displayAnimation" id="displayAnimation">
+        <div class="container-2">
+            <div class="common days">
+                <p id="days"></p>
+                <span>Days</span>
+            </div>
+            <div class="common hours">
+                <p id="hours"></p>
+                <span>Hours</span>
+            </div>
+            <div class="common mins">
+                <p id="mins"></p>
+                <span>Mins</span>
+            </div>
+            <div class="common seconds">
+                <p id="seconds"></p>
+                <span>Secs</span>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="JS/countdown.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+} 
+body{
+    background-image: url("Images/boruto.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+h1{
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 2.5rem;;
+    font-weight: bold;
+}
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+}
+.container-1{
+    padding-top : 1.5rem;
+    text-align: center;
+}
+.date{
+    font-size: 1.5rem;
+    background-color: rgb(71, 68, 68);
+    border: none;
+    border-radius: 5px;
+}
+.button{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    color: black;
+    width: 100px;
+    border-radius: 4px;
+    background-color: rgb(71, 68, 68);
+}
+.buttonsDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.displayAnimation{
+    display: none;
+}
+.displayAnimation.active{
+    margin-top: 1rem;
+    display: flex;
+}
+.container-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+.common {
+    text-align: center;
+    margin: 0 1.5rem;
+    font-size: 4rem;
+    margin: 0 1rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+@media (max-width: 400px){
+    .main-container{
+        margin-left: 0;
+    }
+    .container-2{
+        flex-direction: column;
+    }
+    .common{
+        font-size: 1.25rem;
+        margin-top: 0.50rem;
+    }
+    h1{
+        margin-top: 0.5rem;
+        font-size: 1.25rem;
+    }
+    .container-1{
+        padding-top: 0.25rem;
+    }
+    .date{
+        font-size: 0.75rem;
+    }
+    .button{
+        margin-top: 0.25rem;
+        font-size: 0.65rem;
+        width: 40px;
+        border-radius: 2px;
+        background-color: rgb(71, 68, 68);
+    }
+    .displayAnimation.active{
+        margin-top: 0.25rem;
+        display: flex;
+    }
+}
