@@ -85,23 +85,23 @@ h1{
     }
     h1{
         margin-top: 0.5rem;
-        font-size: 1.25rem;
+        font-size: 2.5rem;
     }
     .container-1{
-        padding-top: 0.25rem;
+        padding-top: 0.3rem;
     }
     .date{
-        font-size: 0.75rem;
+        font-size: 1.5rem;
     }
     .button{
-        margin-top: 0.25rem;
-        font-size: 0.65rem;
-        width: 40px;
+        margin-top: 0.3rem;
+        font-size: 1.5rem;
+        width: 60px;
         border-radius: 2px;
         background-color: rgb(71, 68, 68);
     }
     .displayAnimation.active{
-        margin-top: 0.25rem;
+        margin-top: 0.3rem;
         display: flex;
     }
 }
