@@ -26,10 +26,24 @@ const secondsEl = document.getElementById("seconds");
 
 function countdown(){
     const enteredDate = document.getElementById('date').value;
+
+    console.log("Entered Date:"+enteredDate);
     const convertToDate = new Date(enteredDate);
-    console.log(convertToDate);
+    console.log("converted Date:"+convertToDate);
+    const dateEn = convertToDate.getDate();
+    const monthEn = convertToDate.getMonth();
+    const yearEn = convertToDate.getFullYear();
+    const monthsEn = ["JAN","FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"]
+    console.log("dateEn:"+dateEn+",MonthEn:"+monthsEn[monthEn]+",YearEN:"+yearEn);
+
+    const ConveretedDate = dateEn+"-"+monthsEn[monthEn]+"-"+yearEn;
+
+    const finalDateConv = new Date(ConveretedDate);
+
+    console.log("Final Date:"+finalDateConv);
+
     const todayDate = new Date();
-    const diffDates = convertToDate - todayDate;
+    const diffDates = finalDateConv - todayDate;
     console.log(diffDates);
 
     const totalTime = diffDates/1000;
