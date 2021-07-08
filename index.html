@@ -11,12 +11,13 @@
     <div class="main-container">
         <h1>CountDown Timer</h1>
         <div class="container-1">
-            
-                <input type="text" id="date" class="date" placeholder="dd-MMM-YYYY"><br>
+                <form id="formJS" onsubmit="count(); displayAnim();">
+                <input type="text" id="date" class="date" placeholder="dd-MMM-YYYY" pattern="[0-9]{2}-[a-zA-Z]{3}-[0-9]{4}" required><br>
                 <div class="buttonsDiv">
-                <button class="button" id = "button1" onclick="count(); displayAnim();">Count</button>
+                <button class="button" id = "button1" type="submit">Count</button>
                 <button class="button" onclick="stop()">Stop</button>
             </div>
+        </form>
             
         </div>
         <div class="displayAnimation" id="displayAnimation">

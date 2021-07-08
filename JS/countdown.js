@@ -1,5 +1,11 @@
 var stopTime;
 const displayAnimation = document.getElementById("displayAnimation");
+const formEl = document.getElementById("formJS");
+
+formEl.addEventListener('submit',function(event){
+    event.preventDefault();
+})
+
 function displayAnim(){
     displayAnimation.classList.toggle("active");
 }  
